@@ -1,4 +1,4 @@
-# Returns the total size of a folder in MB
+# Description: Returns the total size of a folder in MB
 # Return Type: Integer
 # Execution Context: User
 $picturesfolder = [Environment]::GetFolderPath(“MyPictures”)
