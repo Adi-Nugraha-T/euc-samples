@@ -756,7 +756,7 @@ do {
     $p = $content | Select-String -Pattern 'Platform: ' -Raw
     if($p){$Platform = $p.Substring(($p.LastIndexOf('Platform: ')+10))  -replace '[#]' -replace '"',"" -replace "'",""}else{$usageflag = $true}
     
-    if($usageflag){usage -ScriptName $ScriptName;$NumScripts--;Continue}
+    if($usageflag){usage -ScriptName $SensorName;$NumSensors--;Continue}
     
     # Encode Script
     $Data = Get-Content -Path $Sensor.FullName -Encoding UTF8 -Raw
